@@ -1,11 +1,11 @@
 {
-  "name": "HTML5Blank",
+  "name": "tartatheme",
   "description": "Powerful shell for rapidly deploying your WordPress projects",
   "license": "MIT",
   "version": "1.5.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/toddmotto/html5blank.git"
+    "url": "https://github.com/toddmotto/tartatheme.git"
   },
   "author": "Todd Motto",
   "contributors": [
@@ -115,13 +115,12 @@
     }
   ],
   "dependencies": {
-    "@fengyuanchen/datepicker": "^0.6.4",
-    "browser-sync": "^2.23.5"
+    "@fengyuanchen/datepicker": "^0.6.5"
   },
   "devDependencies": {
+    "browser-sync": "^2.26.3",
     "del": "^2.2.2",
     "gulp": "^3.6.0",
-    "browser-sync": "^2.18.8",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-concat": "^2.3.4",
     "gulp-csso": "^2.0.0",
@@ -129,10 +128,10 @@
     "gulp-livereload": "^3.8.1",
     "gulp-load-plugins": "^1.4.0",
     "gulp-sass": "^2.2.0",
-    "gulp-sourcemaps": "^2.2.0",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-template": "^4.0.0",
     "gulp-uglify": "^2.0.0",
-    "jshint": "^2.9.4",
+    "jshint": "^2.10.1",
     "jshint-stylish": "^2.2.1"
   },
   "engines": {

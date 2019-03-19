@@ -1,0 +1,42 @@
+.tarta-home {
+    .tarta-homecanv {
+        background-image: url(img/content/hp/canvas-hp.jpg);
+        background-size: cover;
+        min-height: 600px;
+        .tarta-homecanv-inner {
+            padding: 60px 0;
+        }
+    }
+    .tarta-homethree {
+        > div {
+            > div {
+                display: flex;
+                flex: 1;
+                flex-direction: column;
+            }
+        }
+        .tarta-homethree-item  {
+            display: flex;
+            flex: 1;
+            padding: 60px 50px;
+            flex-direction: column;
+            .tarta-homethree-itemheader {
+                flex: 1;
+                border-bottom: 2px solid $filettosecondary;
+                position: relative;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    width: 77px;
+                    height: 2px;
+                    background-color: $secondary;
+                    bottom: -2px;
+                }
+                .tarta-homethree-icon {
+                    @include size(58px);
+                }
+            }
+        }
+    }
+}

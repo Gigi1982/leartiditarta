@@ -31,21 +31,15 @@
 
 			<!-- header -->
 			<header class="header clear" role="banner">
-
-					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo esc_url( home_url() ); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo.svg" alt="Logo" class="logo-img">
-						</a>
-					</div>
-					<!-- /logo -->
-
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
-					</nav>
-					<!-- /nav -->
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>"><img width="270" height="121" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo.png"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <?php tartatheme_nav(); ?>
+                    </div>
+                </nav>
 
 			</header>
 			<!-- /header -->

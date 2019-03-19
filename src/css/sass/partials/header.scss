@@ -5,9 +5,26 @@
 
 
 // Header container
-.header {}
+.header {
+    .navbar {
+        .navbar-brand {
+            display: flex;
+            flex: 1;
+        }
+    }
+}
 
 // Logo
 .logo {}
 
 .logo-img {}
+
+
+.navbar-nav {
+    > li {
+        > a {
+            @extend .menu-style;
+            text-transform: uppercase;
+        }
+    }
+}
