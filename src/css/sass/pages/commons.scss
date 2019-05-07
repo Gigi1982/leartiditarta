@@ -13,3 +13,22 @@
 .fondino-thirdary {
     background-color: #fff;
 }
+
+.bg-primary {
+    background-color: $primary;
+}
+
+.label-badge {
+    border-radius: 20px;
+    border:1px solid $filettofifth;
+    background:transparent;
+    text-align: center;
+    font-size: 11px;
+    color:$filettofifth;
+    font-weight: 700;
+    padding: 5px 10px;
+}
+
+.tarta-bordered-header {
+    @include tarta-header($filettosixth, flex-end, lighten, #fff);
+}

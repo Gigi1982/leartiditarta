@@ -4,4 +4,42 @@
  */
 
 
-.footer {}
+.footer {
+    padding: 120px 0;
+    .footer-item {
+        padding:0 50px;
+        .footer-item-header {
+            border-bottom: 2px solid $body-color;
+            margin-bottom: 32px;
+        }
+        .footer-text {
+            font-size: 12px;
+        }
+        .footer-menu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            >li {
+                > a {
+                    font-size: 12px;
+                }
+            }
+        }
+        .footer-item-mainsponsors {
+            .footer-item-logos {
+                width: 138px;
+                > img {
+                    @include cover-media;
+                }
+            }
+        }
+        .footer-item-sponsors {
+            .footer-item-logos {
+                width: 80px;
+                > img {
+                    @include cover-media;
+                }
+            }
+        }
+    }
+}

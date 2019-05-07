@@ -2,7 +2,7 @@
     .tarta-homecanv {
         background-image: url(img/content/hp/canvas-hp.jpg);
         background-size: cover;
-        min-height: 600px;
+        min-height: 480px;
         .tarta-homecanv-inner {
             padding: 60px 0;
         }
@@ -21,9 +21,10 @@
             padding: 60px 50px;
             flex-direction: column;
             .tarta-homethree-itemheader {
-                flex: 1;
+                //flex: 1;
                 border-bottom: 2px solid $filettosecondary;
                 position: relative;
+                margin-bottom: 15px;
                 &:before {
                     content: "";
                     position: absolute;
@@ -36,7 +37,85 @@
                 .tarta-homethree-icon {
                     @include size(58px);
                 }
+                h3 {
+                    padding-left: 10px;
+                }
             }
+        }
+    }
+    .tarta-homedesc {
+        .tarta-homedesc-img {
+            display: flex;
+            height: 475px;
+            > img {
+                @include cover-media;
+            }
+        }
+        .col-md-6 {
+            display: flex;
+        }
+        .tarta-homedesc-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 70px 50px;
+        }
+    }
+    .tarta-homenews {
+        background-color: $fondinofourth;
+        .tarta-homenews-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid $filettofourth;
+            position: relative;
+            margin-bottom: 15px;
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                width: 77px;
+                height: 2px;
+                background-color: $secondary;
+                bottom: -2px;
+            }
+        }
+        .tarta-bordered-header {
+            @include tarta-header($filettothirdary, space-between, darken, $filettothirdary);
+        }
+    }
+    .tarta-homenewsletter {
+        background: $fondinofifth;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    .tarta-hometwo {
+        .col-md-6 {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .tarta-workshop {
+        overflow: hidden;
+        .row {
+            .col-md-5, .col-md-7 {
+                display: flex;
+                flex-direction: column;
+                .tarta-workshop-img {
+                    display: flex;
+                    > img {
+                        @include cover-media;
+                    }
+                }
+            }
+        }
+        .tarta-workshop-left {
+            background: $fondinosixth;
+            color:#fff; 
+            display: flex;
+            flex-direction: column;
+            flex: 1;
         }
     }
 }

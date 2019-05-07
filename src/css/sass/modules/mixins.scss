@@ -8,3 +8,43 @@
   padding: 0;
   margin: 0;
 }
+
+@mixin cover-el{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+@mixin centered{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+@mixin cover-media{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@mixin tarta-header($color, $align, $filter, $textcolor) {
+    border-bottom: 2px solid $color;
+    position: relative;
+    justify-content: $align;
+    align-items: center;
+    margin-bottom: 20px;
+    color: $textcolor;
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 77px;
+        height: 2px;
+        background-color: lighten($color, 30%);
+        bottom: -2px;
+    }
+}
+

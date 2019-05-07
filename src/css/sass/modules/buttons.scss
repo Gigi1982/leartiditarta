@@ -1,0 +1,16 @@
+.btn {
+    text-transform: uppercase;
+    &.btn-blue {
+         @include button-outline-variant($filettofifth, #fff, lighten($filettofifth,5%), $filettofifth);
+    }
+}
+
+.btn-round {
+    @include size(30px);
+    display: block;
+    padding: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

@@ -24,27 +24,39 @@ body {
 .menu-style {
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    font-size: 13px;
+    font-size: 10px;
 }
 
 h1, .h1 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 62px;
+    font-size: 49px;
     font-weight: 300;
 }
 
 h2, .h2 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 28px;
 }
 
 h3, .h3 {
     font-family: 'prometobold';
-    font-size: 36px;
+    font-size: 24px;
 }
 
 h4, .h4 {
     font-family: 'prometobold';
     font-size: 30px;
+}
+
+h5, .h5  {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.label {
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: 700;
 }
