@@ -43,6 +43,9 @@ Superare alcuni momenti di blocco della vita è possibile!
 Superare alcuni momenti di blocco della vita è possibile!
 <strong>Incontrarsi e parlarne insieme dà la possibilità di conoscersi e poter imparare a come aiutarsi</strong>. Il Counseling è una modalità di relazione di aiuto non clinica.</div>
                             </div>
+                            <div class="tarta-homethree-cta pt-3">
+                                <a href="#" class="btn btn-outline-secondary btn-sm">SCOPRI</a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -55,6 +58,9 @@ Superare alcuni momenti di blocco della vita è possibile!
                                 <div>Persone che si incontrano, condividono, cambiano.
 Superare alcuni momenti di blocco della vita è possibile!
 <strong>Incontrarsi e parlarne insieme dà la possibilità di conoscersi e poter imparare a come aiutarsi</strong>. Il Counseling è una modalità di relazione di aiuto non clinica.</div>
+                            </div>
+                            <div class="tarta-homethree-cta pt-3">
+                                <a href="#" class="btn btn-outline-secondary btn-sm">SCOPRI</a>
                             </div>
                         </div>
                     </div>

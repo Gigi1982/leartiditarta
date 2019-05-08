@@ -1,0 +1,7 @@
+.tarta-intcanv {
+    max-height: 180px;
+    overflow: hidden;
+    > img {
+        @include cover-media;
+    }
+}

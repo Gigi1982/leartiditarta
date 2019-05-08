@@ -1,0 +1,27 @@
+.tarta-aree-block {
+    position: relative;
+    &:first-child {
+        &:after {
+            content: "";
+            background-image: url(img/icons/counseling.png);
+            background-size: cover;
+            width: 60px;
+            height: 65px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    &:nth-child(2) {
+        &:after {
+            content: "";
+            background-image: url(img/icons/teatroterapia.png);
+            background-size: cover;
+            width: 60px;
+            height: 65px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+}

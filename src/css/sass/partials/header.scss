@@ -25,6 +25,7 @@
         > a {
             @extend .menu-style;
             text-transform: uppercase;
+            padding: 0 10px;
         }
     }
 }

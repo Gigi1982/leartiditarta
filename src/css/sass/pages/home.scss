@@ -104,6 +104,7 @@
                 flex-direction: column;
                 .tarta-workshop-img {
                     display: flex;
+                    max-height: 520px;
                     > img {
                         @include cover-media;
                     }
@@ -111,7 +112,7 @@
             }
         }
         .tarta-workshop-left {
-            background: $fondinosixth;
+            background-image: url(img/content/hp/workshop-bg.jpg);
             color:#fff; 
             display: flex;
             flex-direction: column;
