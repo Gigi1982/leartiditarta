@@ -7580,7 +7580,7 @@ body {
 .menu-style, .navbar-nav > li > a {
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
-  font-size: 10px; }
+  font-size: 14px; }
 
 h1, .h1 {
   font-family: 'Open Sans', sans-serif;
@@ -7800,6 +7800,13 @@ h5, .h5 {
     background-color: #9dbfd7;
     bottom: -2px; }
 
+.tarta-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
 .tarta-home .tarta-homecanv {
   background-image: url(img/content/hp/canvas-hp.jpg);
   background-size: cover;
@@ -7945,22 +7952,42 @@ h5, .h5 {
   margin-top: 40px; }
 
 .tarta-aree-block {
-  position: relative; }
+  position: relative;
+  margin-bottom: 50px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #e1a5b9; }
+  .tarta-aree-block:before {
+    content: "";
+    width: 65px;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #7b0041; }
   .tarta-aree-block:first-child:after {
     content: "";
     background-image: url(img/icons/counseling.png);
     background-size: cover;
-    width: 60px;
+    width: 62px;
     height: 65px;
     position: absolute;
     left: 0;
-    bottom: 0; }
+    bottom: 10px; }
   .tarta-aree-block:nth-child(2):after {
     content: "";
     background-image: url(img/icons/teatroterapia.png);
     background-size: cover;
-    width: 60px;
+    width: 68px;
     height: 65px;
     position: absolute;
     left: 0;
-    bottom: 0; }
+    bottom: 10px; }
+  .tarta-aree-block:nth-child(3):after {
+    content: "";
+    background-image: url(img/icons/workshop.png);
+    background-size: cover;
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    left: 0;
+    bottom: 10px; }

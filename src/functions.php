@@ -429,7 +429,7 @@ function create_post_type_leartiditarta()
         'laboratori',
         array(
             'label' => __( 'Categoria Laboratori' ),
-            'rewrite' => array( 'slug' => 'laboratori' ),
+            'rewrite' => array( 'slug' => 'laboratorio' ),
             'hierarchical' => true,
             'has_archive' => true,
             'show_ui'           => true,

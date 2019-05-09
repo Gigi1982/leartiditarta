@@ -179,6 +179,7 @@ Superare alcuni momenti di blocco della vita è possibile!
                     
                     <div class="col-md-5">
                         <div class="tarta-workshop-left p-3 p-md-5">
+                            <a href="<?php echo get_permalink(); ?>" class="tarta-link"></a>
                             <header class="tarta-bordered-header d-md-flex">
                                 <h3>Workshop</h3>
                             </header>
