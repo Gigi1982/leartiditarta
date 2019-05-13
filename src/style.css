@@ -7646,6 +7646,11 @@ h5, .h5 {
   -ms-flex-direction: column;
       flex-direction: column; }
 
+.btn-link {
+  padding: 0;
+  color: #67c0ff;
+  font-weight: 700; }
+
 @font-face {
   font-family: 'tarta';
   src: url("fonts/tarta.eot?30250890");
@@ -7806,6 +7811,9 @@ h5, .h5 {
   left: 0;
   right: 0;
   bottom: 0; }
+
+.module-padding {
+  margin: 50px 0; }
 
 .tarta-home .tarta-homecanv {
   background-image: url(img/content/hp/canvas-hp.jpg);
@@ -7991,3 +7999,45 @@ h5, .h5 {
     position: absolute;
     left: 0;
     bottom: 10px; }
+
+.tarta-workshop-item .tarta-workshop-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.tarta-workshop-item .tarta-workshop-left {
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.2);
+  margin: -20px 20px 0;
+  padding: 30px 40px;
+  position: relative; }
+
+.tarta-workshop-item .tarta-workshop-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; }
+
+.tarta-workshop-item .workshop-category {
+  position: relative;
+  z-index: 2; }
+
+.tarta-workshop .container > div > div {
+  display: -ms-flexbox;
+  display: flex; }
+  .tarta-workshop .container > div > div .tarta-workshop-item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1;
+        flex: 1;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    .tarta-workshop .container > div > div .tarta-workshop-item .tarta-workshop-img {
+      -ms-flex: 1;
+          flex: 1; }
+      .tarta-workshop .container > div > div .tarta-workshop-item .tarta-workshop-img > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }

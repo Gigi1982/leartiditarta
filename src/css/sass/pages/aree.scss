@@ -49,3 +49,11 @@
         }
     }
 }
+
+.tarta-workshop-item {
+    .tarta-workshop-img {
+        > img {
+            @include cover-media;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.tarta-workshop-item {
+    .tarta-workshop-left {
+        background: #fff;
+        box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.2);
+        margin: -20px 20px 0;
+        padding: 30px 40px;
+        position: relative;
+    }
+    .tarta-workshop-link {
+        @include cover-el;
+        z-index: 1;
+    }
+    .workshop-category {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.tarta-workshop {
+    .container {
+        > div {
+            > div {
+                display: flex;
+                .tarta-workshop-item {
+                    display: flex;
+                    flex: 1;
+                    flex-direction: column;
+                    .tarta-workshop-img {
+                        flex: 1;
+                        > img {
+                            @include cover-media;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
