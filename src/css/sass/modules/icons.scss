@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'tarta';
-  src: url('fonts/tarta.eot?30250890');
-  src: url('fonts/tarta.eot?30250890#iefix') format('embedded-opentype'),
-       url('fonts/tarta.woff2?30250890') format('woff2'),
-       url('fonts/tarta.woff?30250890') format('woff'),
-       url('fonts/tarta.ttf?30250890') format('truetype'),
-       url('fonts/tarta.svg?30250890#tarta') format('svg');
+  src: url('fonts/tarta.eot?85999854');
+  src: url('fonts/tarta.eot?85999854#iefix') format('embedded-opentype'),
+       url('fonts/tarta.woff2?85999854') format('woff2'),
+       url('fonts/tarta.woff?85999854') format('woff'),
+       url('fonts/tarta.ttf?85999854') format('truetype'),
+       url('fonts/tarta.svg?85999854#tarta') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -55,5 +55,9 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-phone:before { content: '\e800'; } /* '' */
+.icon-facebook:before { content: '\e800'; } /* '' */
+.icon-linkedin:before { content: '\e801'; } /* '' */
+.icon-phone:before { content: '\e802'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
+.icon-whatsapp:before { content: '\f232'; } /* '' */
 .icon-comment:before { content: '\f4ac'; } /* '' */

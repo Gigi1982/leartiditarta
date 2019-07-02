@@ -25,6 +25,7 @@
                 border-bottom: 2px solid $filettosecondary;
                 position: relative;
                 margin-bottom: 15px;
+                padding-bottom: 6px;
                 &:before {
                     content: "";
                     position: absolute;
@@ -46,7 +47,8 @@
     .tarta-homedesc {
         .tarta-homedesc-img {
             display: flex;
-            height: 475px;
+            min-height: 580px;
+            height: 580px;
             > img {
                 @include cover-media;
             }
@@ -104,7 +106,9 @@
                 flex-direction: column;
                 .tarta-workshop-img {
                     display: flex;
-                    max-height: 520px;
+                    max-height: 450px;
+                    height: 450px;
+                    flex: 1;
                     > img {
                         @include cover-media;
                     }

@@ -13,12 +13,21 @@
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
+        }
+      })
+        
+        var workSwiper = new Swiper ('.tarta-workswiper', {
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
         },
 
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
-        },
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        }
       })
 	});
 

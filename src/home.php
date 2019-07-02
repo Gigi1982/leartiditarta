@@ -161,68 +161,76 @@ Superare alcuni momenti di blocco della vita è possibile!
                 </div>
             </section>
             <section class="tarta-workshop">
-                <?php 
-                    $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+                <div class="swiper-container tarta-workswiper">
+                    <div class="swiper-wrapper">
+                    <?php 
+                        $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
-                    $workshopArgs = array(
-                        'posts_per_page'	=> -1,
-                        'post_type'			=> 'laboratori',
-                        'order'				=> 'ASC'
-                    );
-                    $workshopQuery = new WP_Query($workshopArgs);       
-                    if ($workshopQuery->have_posts()):
-                ?>
-                <div class="row no-gutters">
+                        $workshopArgs = array(
+                            'posts_per_page'	=> -1,
+                            'post_type'			=> 'laboratori',
+                            'order'				=> 'ASC'
+                        );
+                        $workshopQuery = new WP_Query($workshopArgs);       
+                        if ($workshopQuery->have_posts()):
+                    ?>
+
                     <?php 
                         while ($workshopQuery->have_posts()) : $workshopQuery->the_post();
                     ?>
-                    
-                    <div class="col-md-5">
-                        <div class="tarta-workshop-left p-3 p-md-5">
-                            <a href="<?php echo get_permalink(); ?>" class="tarta-link"></a>
-                            <header class="tarta-bordered-header d-md-flex">
-                                <h3>Workshop</h3>
-                            </header>
-                            <h3 class=""><?php the_title(); ?></h3>
-                            <div class="tarta-workshop-text"><?php the_content(); ?></div>
-                            <?php 
-                            $workshopDate = get_field('data_workshop');
-                            if ($workshopDate): ?>
-                            <div class="tarta-workshop-date label text-uppercase mb-3">
-                                <?php echo $workshopDate; ?>
-                            </div>
-                            <?php endif; ?>
-                            <?php 
-                            $workshopLuogo = get_field('luogo_workshop');
-                            if ($workshopLuogo): ?>
-                            <div class="tarta-workshop-date label text-uppercase">
-                                <?php echo $workshopLuogo; ?>
-                            </div>
-                            <?php endif; ?>
-                            <div class="tarta-workshop-metadata d-flex justify-content-between mt-4">
-                                <div class="tarta-book-button">
-                                    <span class="label-badge d-block mr-3">PRENOTAZIONE OBBLIGATORIA</span>
+                        <div class="swiper-slide">
+                            <div class="row no-gutters"> 
+                                <div class="col-md-5">
+                                    <div class="tarta-workshop-left p-3 p-md-5">
+                                        <a href="<?php echo get_permalink(); ?>" class="tarta-link"></a>
+                                        <header class="tarta-bordered-header d-md-flex">
+                                            <h3>Workshop</h3>
+                                        </header>
+                                        <h3 class=""><?php the_title(); ?></h3>
+                                        <div class="tarta-workshop-text"><?php the_content(); ?></div>
+                                        <?php 
+                                        $workshopDate = get_field('data_workshop');
+                                        if ($workshopDate): ?>
+                                        <div class="tarta-workshop-date label text-uppercase mb-3">
+                                            <?php echo $workshopDate; ?>
+                                        </div>
+                                        <?php endif; ?>
+                                        <?php 
+                                        $workshopLuogo = get_field('luogo_workshop');
+                                        if ($workshopLuogo): ?>
+                                        <div class="tarta-workshop-date label text-uppercase">
+                                            <?php echo $workshopLuogo; ?>
+                                        </div>
+                                        <?php endif; ?>
+                                        <div class="tarta-workshop-metadata d-flex justify-content-between mt-4">
+                                            <div class="tarta-book-button">
+                                                <span class="label-badge d-block mr-3">PRENOTAZIONE OBBLIGATORIA</span>
+                                            </div>
+                                            <div class="tarta-social-button d-flex">
+                                                <a href="#" class="btn btn-round btn-blue mr-3"><i class="icon icon-comment"></i></a>
+                                                <a href="#" class="btn btn-round btn-blue"><i class="icon icon-phone"></i></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
-                                <div class="tarta-social-button d-flex">
-                                    <a href="#" class="btn btn-round btn-blue mr-3"><i class="icon icon-comment"></i></a>
-                                    <a href="#" class="btn btn-round btn-blue"><i class="icon icon-phone"></i></a>
+                                <?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
+                                <div class="col-md-7">
+                                    <div class="tarta-workshop-img">
+                                        <img src="<?php echo get_the_post_thumbnail_url($_post->ID,'extra-large'); ?>">
+                                    </div>
                                 </div>
+                                <?php endif; ?>
                             </div>
-                            
                         </div>
-                    </div>
-                    <?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-                    <div class="col-md-7">
-                        <div class="tarta-workshop-img">
-                            <img src="<?php echo get_the_post_thumbnail_url($_post->ID,'extra-large'); ?>">
-                        </div>
-                    </div>
-                    <?php endif; ?>
                     
                     <?php 
                         endwhile;
                         wp_reset_postdata();
                     ?>
+                        
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
                 
                 <?php endif; ?>

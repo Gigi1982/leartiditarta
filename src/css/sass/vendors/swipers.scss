@@ -1,0 +1,14 @@
+.tarta-workswiper {
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            background:#fff;
+            opacity: 1;
+            &.swiper-pagination-bullet-active {
+                background: $filettosixth;
+            }
+        }
+    }
+    .swiper-slide {
+        height: auto;
+    }
+}

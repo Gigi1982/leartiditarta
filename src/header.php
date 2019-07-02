@@ -39,6 +39,14 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <?php tartatheme_nav(); ?>
                     </div>
+                    <nav class="social-nav">
+                        <ul class="list-unstyled list-inline mb-0">
+                            <li class="list-inline-item"><a class="btn btn-primary btn-round" href="#"><i class="icon icon-facebook"></i></a></li>
+                            <li class="list-inline-item"><a class="btn btn-primary btn-round" href="#"><i class="icon icon-instagram"></i></a></li>
+                            <li class="list-inline-item"><a class="btn btn-primary btn-round" href="#"><i class="icon icon-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a class="btn btn-primary btn-round" href="#"><i class="icon icon-whatsapp"></i></a></li>
+                        </ul>
+                    </nav>
                 </nav>
 
 			</header>
